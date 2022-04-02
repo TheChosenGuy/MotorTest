@@ -20,14 +20,15 @@ public final class Constants {
         public static final XboxController XBOX = new XboxController(0);
     }
     public static final class Buttons {
-        // public static final JoystickButton XBOX_A = new JoystickButton(Controllers.XBOX, XboxController.Button.kA.value);
-        // public static final JoystickButton XBOX_Y = new JoystickButton(Controllers.XBOX, XboxController.Button.kY.value);
-        // public static final JoystickButton XBOX_B = new JoystickButton(Controllers.XBOX, XboxController.Button.kB.value);
-        // public static final JoystickButton XBOX_X = new JoystickButton(Controllers.XBOX, XboxController.Button.kX.value);
+        public static final JoystickButton XBOX_A = new JoystickButton(Controllers.XBOX, XboxController.Button.kA.value);
+        public static final JoystickButton XBOX_Y = new JoystickButton(Controllers.XBOX, XboxController.Button.kY.value);
+        public static final JoystickButton XBOX_B = new JoystickButton(Controllers.XBOX, XboxController.Button.kB.value);
+        public static final JoystickButton XBOX_X = new JoystickButton(Controllers.XBOX, XboxController.Button.kX.value);
 
-        public static final JoystickButton XBOX_A = new JoystickButton(Controllers.XBOX, 1);
-        public static final JoystickButton XBOX_Y = new JoystickButton(Controllers.XBOX, 2);
-        public static final JoystickButton XBOX_B = new JoystickButton(Controllers.XBOX, 3);
-        public static final JoystickButton XBOX_X = new JoystickButton(Controllers.XBOX, 4);
+        // Using number values instead of Button.something.value makes setting up simulated controller easy 
+        // public static final JoystickButton XBOX_A = new JoystickButton(Controllers.XBOX, 1);
+        // public static final JoystickButton XBOX_Y = new JoystickButton(Controllers.XBOX, 2);
+        // public static final JoystickButton XBOX_B = new JoystickButton(Controllers.XBOX, 3);
+        // public static final JoystickButton XBOX_X = new JoystickButton(Controllers.XBOX, 4);
     }
 }
