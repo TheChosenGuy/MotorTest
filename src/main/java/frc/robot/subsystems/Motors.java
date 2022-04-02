@@ -36,11 +36,8 @@ public class Motors extends SubsystemBase {
     motor.set(-0.2);
   }
   public void StopMotor() {
-    SmartDashboard.putBoolean("Y", Controllers.XBOX.getYButton());
-    SmartDashboard.putBoolean("A", Controllers.XBOX.getAButton());
     if(Controllers.XBOX.getYButton() || Controllers.XBOX.getAButton()) return;
     motor.set(0);
-    SmartDashboard.putNumber("Motor", 0);
   }
   public void IncreaseID() {
     RobotContainer.id++;
